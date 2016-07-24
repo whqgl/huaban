@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/iconfont.css">
+</head>
+<style>
+	body,html{
+		margin:0;
+		padding: 0;
+		list-style: none;
+	}
+	body,html{
+		height: 100%;
+		background: url(image/2.jpg) no-repeat center center;
+		background-size: cover;
+	}
+	.out-box{
+		width: 100%;
+		height: 100%;
+		margin-left: 120px;
+ 	}
+	.left{
+		width: 120px;
+		height: 100%;
+		margin-left: -120px;
+		background: rgba(255,255,255,.3);
+		float: left;
+	}
+	.left div{
+		width: 100%;
+		height: 35px;
+		text-align: center;
+		line-height: 35px;
+	}
+	.left input{
+		display: block;
+		margin: 0 auto;
+	}
+	.right{
+		width: 100%;
+		float: right;
+	}
+	.palette-box div{
+		background: rgba(255,255,255,0.2);
+	}
+</style>
+<body>
+	<div class="out-box">
+		<div class="left">
+			<div class="iconfont add"  role="add">&#xe60e;</div>
+			<div class="iconfont save" role="save">&#xe60b;</div>
+			<div class="iconfont cexiao" role="cexiao">&#xe60a;</div>
+			<hr>
+			<div class="iconfont line" role="line">&#xe604;</div>
+			<div class="iconfont rect" role="rect">&#xe60c;</div>
+			<div class="iconfont circle" role="circle">&#xe608;</div>
+			<div class="iconfont triangle" role="triangle">&#xe600;</div>
+			<div class="iconfont polystar" role="polystar">&#xe603;</div>
+			<div class="iconfont poly" role="poly">&#xe609;</div>
+			<div class="iconfont pencil" role="pencil">&#xe602;</div>
+			<hr>
+			<div class="iconfont fill" role="fill">&#xe601;</div>
+			<div class="iconfont stroke" role="stroke">&#xe606;</div>
+			<hr>
+			<input type="color" id="color">
+			<br>
+			<input type="color" id="color1">
+			<hr>
+			<div class="iconfont clear" role="clear">&#xe605;</div>
+		</div>
+		<div class="right">
+			<div class="palette-box"></div>
+		</div>
+	</div>
+	<script src='js/palette.js'></script>
+	<script src='js/jquery.js'></script>
+	<script src='js/index.js'></script>
+</body>
+</html>
